@@ -12,7 +12,7 @@
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
-var pet = "turtle 🐢"
+var pet = "turtle 🐢" //String
 
 
 
@@ -22,7 +22,7 @@ var pet = "turtle 🐢"
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
  */
-var petName: String?
+var petName: String? //Optional string
 
 
 
@@ -32,7 +32,8 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+//(nil)
+print(petName)
 
 
 
@@ -46,6 +47,7 @@ var petName: String?
 
 
 
+petName = "Roger"
 
 
 
@@ -56,9 +58,9 @@ var petName: String?
 // write your code here
 
 
+print(petName)
 
-
-
+//("Roger")
 
 
 /*: question6
@@ -66,7 +68,10 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)}
+else {
+    print("There is no pet name")}
 
 
 
@@ -77,7 +82,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName!)
 
 
 
@@ -90,7 +95,10 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil {
+    print(anotherPetName)}
+else {
+    print("The value of anotherPetName is nil")}
 
 
 
@@ -101,7 +109,10 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil {
+    print(anotherPetName!)}
+else{
+    print("anotherPetName has no value")}
 
 
 
@@ -113,6 +124,12 @@ var anotherPetName: String?
  */
 // write your code here
 
+anotherPetName = "Limon"
+
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)}
+else {
+    print("Nothing")}
 
 
 
@@ -125,8 +142,10 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
+//Needs to be var
+var optionalValue : String? = nil
 
-
+optionalValue = "Value"
 
 
 
